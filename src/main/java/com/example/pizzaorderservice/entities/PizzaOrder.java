@@ -15,12 +15,13 @@ public class PizzaOrder {
     private String customerEmail;
     private String customerNumber;
     private String orderedPizza;
+    private String ingredients;
     private int moneyOwed;
 
     public PizzaOrder() {
     }
 
-    public PizzaOrder(Long id, String customerName, String customerEmail, String customerNumber, String orderedPizza, int moneyOwed) {
+    public PizzaOrder(Long id, String customerName, String customerEmail, String customerNumber, String orderedPizza, String ingredients, int moneyOwed) {
         this.id = id;
         this.customerName = customerName;
         this.customerEmail = customerEmail;
@@ -75,5 +76,13 @@ public class PizzaOrder {
 
     public void setMoneyOwed(int moneyOwed) {
         this.moneyOwed = moneyOwed;
+    }
+
+    public String getIngredients() {
+        return ingredients;
+    }
+
+    public void setIngredients(String ingredients) {
+        this.ingredients = ingredients;
     }
 }

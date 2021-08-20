@@ -18,7 +18,7 @@ public class PizzaOrderServiceApplication {
     public CommandLineRunner init(OrderRepository orderRepository){
         return (args) -> {
             if (orderRepository.count() == 0) {
-                orderRepository.save(new PizzaOrder(1L, "Jens", "jens@email.com", "12345678", "Vesuvio", 85));
+                orderRepository.save(new PizzaOrder(1L, "Jens", "jens@email.com", "12345678", "Vesuvio", "Tomatsås, Ost, Skinka", 85));
 
             }
 
